@@ -1,5 +1,26 @@
 {
+  "launcher": {
+    "text": "Widget'lar"
+  },
+  "service": {
+    "title": "Widget Koruyucu",
+    "error_title": "Hata",
+    "applying": "Bu duvar kağıdı için kaydedilen düzen uygulanıyor...",
+    "applied": "Düzen başarıyla uygulandı! Yeniden yükleniyor...",
+    "failed": "Durum enjekte edilemedi",
+    "no_layout": "Bu duvar kağıdı için kaydedilmiş düzen yok.",
+    "saved": "Düzen değişikliği algılandı ve kaydedildi."
+  },
   "settings": {
+    "title": "Kaydedilmiş Masaüstü Widget'ları",
+    "general": "Genel",
+    "save_widgets_auto": "Widget'ları otomatik kaydet",
+    "load_widgets_auto": "Widget'ları otomatik yükle",
+    "saved_layouts": "Kaydedilmiş Düzenler",
+    "nuke_all": "Hepsini Sıfırla",
+    "nuke_all_notification": "Kaydedilen tüm düzenler temizlendi.",
+    "no_widgets_saved": "Henüz kaydedilmiş widget yok.",
+    "remove_widget": "Bu duvar kağıdı için kaydedilen widget'ları kaldır",
     "list": {
       "remove": "Aşağıdaki masaüstü widget kurulumunu kaldır."
     },

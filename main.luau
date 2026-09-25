@@ -128,18 +128,18 @@ function update()
   -- 1. Handle Wallpaper Changes
   if currentWallpaper ~= lastWallpaper then
     if loadWidgets and monitorWidgets[currentWallpaper] then
-      noctalia.notify("Widget Saver", "Applying saved layout for this wallpaper...")
+      noctalia.notify(noctalia.tr("service.title"), noctalia.tr("service.applying"))
       local tomlContent = generateTomlForWidgets(monitorWidgets[currentWallpaper])
       
       local success, err = injectLayoutIntoStateFile(tomlContent)
       if success then
-        noctalia.notify("Widget Saver", "Layout applied successfully! Reloading...")
+        noctalia.notify(noctalia.tr("service.title"), noctalia.tr("service.applied"))
         noctalia.runAsync({"noctalia", "msg", "config-reload"})
       else
-        noctalia.notify("Error", "Failed to inject state: " .. tostring(err))
+        noctalia.notify(noctalia.tr("service.error_title"), noctalia.tr("service.failed") .. ": " .. tostring(err))
       end
     else
-      noctalia.notify("Widget Saver", "No saved layout for this wallpaper.")
+      noctalia.notify(noctalia.tr("service.title"), noctalia.tr("service.no_layout"))
     end
     
     lastWallpaper = currentWallpaper
@@ -149,7 +149,7 @@ function update()
 
   -- 2. Handle Widget Layout Changes
   if saveWidgets and currentLayoutStr ~= lastLayoutStr then
-    noctalia.notify("Widget Saver", "Layout change detected and saved.")
+    noctalia.notify(noctalia.tr("service.title"), noctalia.tr("service.saved"))
     monitorWidgets[currentWallpaper] = currentLayout
     noctalia.state.set("monitorWidgets", monitorWidgets)
     

@@ -1,6 +1,6 @@
 function update()
   barWidget.setGlyph("settings")
-  barWidget.setText("Widgets")
+  barWidget.setText(noctalia.tr("launcher.text"))
   noctalia.setUpdateInterval(10000)
 end
 

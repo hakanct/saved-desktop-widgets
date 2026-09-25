@@ -1,5 +1,26 @@
 {
+  "launcher": {
+    "text": "小组件"
+  },
+  "service": {
+    "title": "小组件保存器",
+    "error_title": "错误",
+    "applying": "正在为此壁纸应用已保存的布局...",
+    "applied": "布局应用成功！正在重新加载...",
+    "failed": "注入状态失败",
+    "no_layout": "此壁纸没有保存的布局。",
+    "saved": "检测到布局更改并已保存。"
+  },
   "settings": {
+    "title": "已保存的桌面小组件",
+    "general": "通用",
+    "save_widgets_auto": "自动保存小组件",
+    "load_widgets_auto": "自动加载小组件",
+    "saved_layouts": "已保存的布局",
+    "nuke_all": "全部清空",
+    "nuke_all_notification": "已清除所有保存的布局。",
+    "no_widgets_saved": "暂无保存的小组件。",
+    "remove_widget": "移除此壁纸的已保存小组件",
     "list": {
       "remove": "移除以下桌面小组件设置。"
     },
@@ -13,8 +34,8 @@
     },
     "tool_row": {
       "nuke": {
-        "text": "全部清空",
-        "tooltip": "移除所有设置。警告：这将移除除当前设置之外的所有其他设置！"
+        "text": "Nuke",
+        "tooltip": "Remove all setups. WARNING: THIS WILL REMOVE ALL THE OTHER SETUPS EXCEPT THE CURRENT ONE!"
       }
     }
   }

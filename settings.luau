@@ -20,7 +20,7 @@ local function render()
       ui.button({
         glyph = "trash",
         variant = "ghost",
-        tooltip = "Remove saved widgets for this wallpaper",
+        tooltip = noctalia.tr("settings.remove_widget"),
         onClick = function()
           monitorWidgets[wallpaper] = nil
           noctalia.state.set("monitorWidgets", monitorWidgets)
@@ -32,7 +32,7 @@ local function render()
 
   if #widgetRows == 0 then
     table.insert(widgetRows, ui.label({
-      text = "No widgets saved yet.", color = "on_surface_variant", align = "center", padding = 16
+      text = noctalia.tr("settings.no_widgets_saved"), color = "on_surface_variant", align = "center", padding = 16
     }))
   end
 
@@ -40,7 +40,7 @@ local function render()
   panel.render(ui.column({ flexGrow = 1, gap = 16, padding = 16 }, {
     -- Header
     ui.row({ align = "center", justify = "space_between", gap = 8 }, {
-      ui.label({ text = "Saved Desktop Widgets", fontSize = 16, fontWeight = "bold", color = "on_surface", flexGrow = 1 }),
+      ui.label({ text = noctalia.tr("settings.title"), fontSize = 16, fontWeight = "bold", color = "on_surface", flexGrow = 1 }),
       ui.button({ glyph = "close", onClick = "onCloseClicked" }),
     }),
 
@@ -49,28 +49,28 @@ local function render()
 
       -- Toggles section
       ui.column({ gap = 8 }, {
-        ui.label({ text = "General", fontWeight = "medium", color = "on_surface_variant" }),
+        ui.label({ text = noctalia.tr("settings.general"), fontWeight = "medium", color = "on_surface_variant" }),
         ui.row({ gap = 12, align = "center" }, {
           ui.toggle({ checked = saveWidgets, onChange = "onSaveToggled" }),
-          ui.label({ text = "Save widgets automatically", flexGrow = 1 }),
+          ui.label({ text = noctalia.tr("settings.save_widgets_auto"), flexGrow = 1 }),
         }),
         ui.row({ gap = 12, align = "center" }, {
           ui.toggle({ checked = loadWidgets, onChange = "onLoadToggled" }),
-          ui.label({ text = "Load widgets automatically", flexGrow = 1 }),
+          ui.label({ text = noctalia.tr("settings.load_widgets_auto"), flexGrow = 1 }),
         }),
       }),
 
       -- Saved Layouts list section
       ui.column({ gap = 8 }, {
         ui.row({ align = "center", justify = "space_between" }, {
-          ui.label({ text = "Saved Layouts", fontWeight = "medium", color = "on_surface_variant" }),
+          ui.label({ text = noctalia.tr("settings.saved_layouts"), fontWeight = "medium", color = "on_surface_variant" }),
           ui.button({
-            text = "Nuke All",
+            text = noctalia.tr("settings.nuke_all"),
             glyph = "trash",
             onClick = function()
               monitorWidgets = {}
               noctalia.state.set("monitorWidgets", monitorWidgets)
-              noctalia.notify("Saved Desktop Widgets", "All saved layouts cleared.")
+              noctalia.notify(noctalia.tr("settings.title"), noctalia.tr("settings.nuke_all_notification"))
               render()
             end
           }),
