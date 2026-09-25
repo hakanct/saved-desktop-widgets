@@ -1,0 +1,21 @@
+{
+  "settings": {
+    "list": {
+      "remove": "다음 데스크톱 위젯 설정을 제거합니다."
+    },
+    "load_widgets": {
+      "description": "배경화면이 변경될 때 위젯 로드를 활성화합니다.",
+      "label": "위젯 로드"
+    },
+    "save_widgets": {
+      "description": "위젯이 변경될 때마다 저장을 활성화합니다.",
+      "label": "위젯 저장"
+    },
+    "tool_row": {
+      "nuke": {
+        "text": "전체 삭제",
+        "tooltip": "모든 설정을 제거합니다. 경고: 현재 설정을 제외한 다른 모든 설정이 삭제됩니다!"
+      }
+    }
+  }
+}

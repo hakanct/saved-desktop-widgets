@@ -1,0 +1,21 @@
+{
+  "settings": {
+    "list": {
+      "remove": "Aşağıdaki masaüstü widget kurulumunu kaldır."
+    },
+    "load_widgets": {
+      "description": "Duvar kağıdı değiştiğinde widget'ların yüklenmesini etkinleştir.",
+      "label": "Widget'ları Yükle"
+    },
+    "save_widgets": {
+      "description": "Değiştirildikçe widget'ların kaydedilmesini etkinleştir.",
+      "label": "Widget'ları Kaydet"
+    },
+    "tool_row": {
+      "nuke": {
+        "text": "Her Şeyi Sıfırla",
+        "tooltip": "Tüm kurulumları kaldır. UYARI: BU, MEVCUT OLAN DIŞINDAKİ TÜM DİĞER KURULUMLARI KALDIRACAKTIR!"
+      }
+    }
+  }
+}

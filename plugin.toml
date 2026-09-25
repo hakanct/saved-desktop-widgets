@@ -34,3 +34,7 @@ position = "center"
   label_key = "settings.load_widgets.label"
   description_key = "settings.load_widgets.description"
   default = true
+
+[[widget]]
+id = "settings_launcher"
+entry = "launcher_widget.luau"

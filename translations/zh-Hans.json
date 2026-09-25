@@ -1,0 +1,21 @@
+{
+  "settings": {
+    "list": {
+      "remove": "移除以下桌面小组件设置。"
+    },
+    "load_widgets": {
+      "description": "壁纸更改时启用小组件加载。",
+      "label": "加载小组件"
+    },
+    "save_widgets": {
+      "description": "小组件更改时启用保存。",
+      "label": "保存小组件"
+    },
+    "tool_row": {
+      "nuke": {
+        "text": "全部清空",
+        "tooltip": "移除所有设置。警告：这将移除除当前设置之外的所有其他设置！"
+      }
+    }
+  }
+}

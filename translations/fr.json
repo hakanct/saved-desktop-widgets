@@ -1,0 +1,21 @@
+{
+  "settings": {
+    "list": {
+      "remove": "Supprimer la configuration du widget de bureau suivante."
+    },
+    "load_widgets": {
+      "description": "Activer le chargement des widgets lorsque le fond d'écran change.",
+      "label": "Charger les widgets"
+    },
+    "save_widgets": {
+      "description": "Activer l'enregistrement des widgets à chaque modification.",
+      "label": "Enregistrer les widgets"
+    },
+    "tool_row": {
+      "nuke": {
+        "text": "Tout supprimer",
+        "tooltip": "Supprimer toutes les configurations. AVERTISSEMENT : CELA SUPPRIMERA TOUTES LES AUTRES CONFIGURATIONS SAUF LA ACTUELLE !"
+      }
+    }
+  }
+}
