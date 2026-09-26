@@ -1,11 +1,11 @@
 id = "hakanct/saved-desktop-widgets"
 name = "Saved Desktop Widgets"
-version = "0.1.0"
-plugin_api = 9
+version = "1.0.0"
+plugin_api = 26
 author = "hakanct"
 license = "MIT"
 dependencies = []
-tags = ["desktop", "wallpaper", "widgets"]
+tags = ["bar", "desktop", "panel", "service", "utility", "wallpaper"]
 icon = "puzzle"
 description = "A plugin that allows you to have multiple setups for your desktop widgets based on the wallpaper."
 

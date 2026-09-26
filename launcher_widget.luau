@@ -1,3 +1,6 @@
+--!nonstrict
+-- launcher_widget.luau: Bar widget launcher for Saved Desktop Widgets settings
+
 function update()
   barWidget.setGlyph("settings")
   barWidget.setText(noctalia.tr("launcher.text"))
