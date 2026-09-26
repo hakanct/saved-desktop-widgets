@@ -39,7 +39,7 @@ local function generateTomlForWidgets(widgetTable)
         elseif type(value) == "boolean" then
           tomlString = tomlString .. string.format('%s = %s\n', key, tostring(value))
         elseif type(value) == "number" then
-          tomlString = tomlString .. string.format('%s = %s\n', key, value)
+          tomlString = tomlString .. string.format('%s = %s\n', key, tostring(value))
         end
       end
       tomlString = tomlString .. "\n"
@@ -52,7 +52,7 @@ local function generateTomlForWidgets(widgetTable)
           elseif type(value) == "boolean" then
             tomlString = tomlString .. string.format('%s = %s\n', key, tostring(value))
           elseif type(value) == "number" then
-            tomlString = tomlString .. string.format('%s = %s\n', key, value)
+            tomlString = tomlString .. string.format('%s = %s\n', key, tostring(value))
           end
         end
         tomlString = tomlString .. "\n"
